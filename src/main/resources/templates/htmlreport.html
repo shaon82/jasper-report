@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>all Employee</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" th:href="@{https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css}">
+
+    <!-- jQuery library -->
+
+</head>
+<body>
+    <div class="container">
+        <h2>Employee List</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col">email</th>
+                <th scope="col">phone</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr >
+                <th scope="row" th:text="${employee.id}"></th>
+                <td th:text="${employee.firstName}"></td>
+                <td th:text="${employee.lastName}"></td>
+                <td th:text="${employee.email}"></td>
+                <td th:text="${employee.phone}"></td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <script th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js}"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script th:src="@{https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+
+</body>
+</html>

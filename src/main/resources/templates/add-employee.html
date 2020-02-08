@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>add Employee</title>
+    <link rel="stylesheet" th:href="@{https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css}">
+</head>
+<body>
+    <div class="container">
+        <div th:if="${error}"> problem!!!!!!!!!!!</div>
+        <form th:action="@{/add/employee}" method="post" th:object="${employee}">
+            First Name:<input type="text" id="firstName" name="firstName" required="required"/><br/><br/>
+            Last Name:<input type="text" id="lastName" name="lastName" required="required"/><br/><br/>
+            Email:<input type="email" id="email" name="email" required="required"/><br/><br/>
+            Phone:<input type="text" id="phone" name="phone" required="required"/><br/><br/>
+<!--            Created Date:<input type="date" id="createdDate" name="createdDate" required="required"/><br/><br/>-->
+<!--            Updated Date:<input type="date" id="updatedDate" name="updatedDate" required="required"/><br/><br/>-->
+            <button type="submit" value="submit">save</button>
+        </form>
+    </div>
+
+    <script th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js}"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script th:src="@{https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+</body>
+</html>

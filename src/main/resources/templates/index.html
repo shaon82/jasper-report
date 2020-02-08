@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotem page</title>
+    <link rel="stylesheet" th:href="@{https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css}">
+</head>
+<body>
+    <div class="container">
+        <p><a th:href="@{/add/employee}">add employee</a></p>
+        <p><a th:href="@{/all-employee}">all Employee</a></p>
+        <p><a th:href="@{/download-pdf}">Download pdf</a></p>
+        <p><a th:href="@{/one}">One Page App</a></p>
+    </div>
+    <script th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js}"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script th:src="@{https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+</body>
+</html>
